@@ -3,16 +3,17 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [name,setName]=useState("Hello world");
-  function changename(){
-    setName("good morning");
+  const [count,setCount]=useState(0);
+  function addcount(){
   
+    setCount(count+1)
   }
+ 
 
   return (
     <div>
-      <h1>{name}</h1>
-      <button onClick={changename}>changename</button>
+      <h1>{count}</h1>
+      <button onClick={addcount}>addcount</button>
       
     </div>
   );
